@@ -1,0 +1,28 @@
+{
+  "name": "mispt-lzdv",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "buildlib": "vue-cli-service build --target lib --name helloWord --dest LZDVLib src/components/index.js",
+    "buildlib1": "vue-cli-service build --target lib --name helloWord1 --dest LZDVLib src/components/HelloWorld/helloWord.vue"
+  },
+  "dependencies": {
+    "vue": "^2.6.14",
+    "vue-awesome-swiper": "^4.1.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.3",
+    "compression-webpack-plugin": "^6.1.1",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "jquery": "^3.6.0",
+    "optimize-css-assets-webpack-plugin": "^6.0.1",
+    "vue-template-compiler": "^2.6.14"
+  }
+}

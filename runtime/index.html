@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./js/components/ChartPreviewComponents.css" rel="stylesheet">
+
+    <!-- 依赖 shadow-root-->
+    <script src="./lib/vue.min.js"></script>
+    <script src="./lib/vue-custom-element.js"></script>
+    <!-- 对于跨浏览器兼容性 (IE9+)，请使用自定义元素 polyfill -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/document-register-element/1.4.1/document-register-element.js"></script> -->
+
+    <!-- 自定义组件 -->
+    <!-- <script src="./lib/helloWorld.js"></script> -->
+    <!-- <script src="./lib/twiceDev.js"></script> -->
+    <script src="./js/components/nestingView.js"></script>
+    <!-- LZDV原始依赖 -->
+    <!-- <script src="./js/components/ChartPreviewComponents.common.Vendors.js"></script>
+    <script src="./js/components/ChartPreviewComponents.umd.js"></script>
+    <script src="./js/components/ChartPreviewComponents.umd.Vendors.js"></script> -->
+    <!-- LZDV压缩后的依赖 -->
+    <!-- <script src="./js/components/ChartPreviewComponents.common.Vendors.min.js"></script>
+    <script src="./js/components/ChartPreviewComponents.umd.min.js"></script>
+    <script src="./js/components/ChartPreviewComponents.umd.min.Vendors.js"></script> -->
+    <!-- LZDV跨端口的依赖 -->
+    <!-- <script src="http://192.168.13.145:9000/lzdv/js/components/ChartPreviewComponents.common.Vendors.js"></script>
+    <script src="http://192.168.13.145:9000/lzdv/js/components/ChartPreviewComponents.umd.min.Vendors.js"></script>
+    <script src="http://192.168.13.145:9000/lzdv/js/components/ChartPreviewComponents.umd.min.js"></script> -->
+
+    <!-- JS -->
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <!-- 组件-未编译 -->
+    <my-vue-web-comp></my-vue-web-comp>
+    <!-- 测试webpack编译的组件 -->
+    <hello-world></hello-world>
+    <hello-world></hello-world>
+    <chart-view></chart-view>
+    <nesting-view></nesting-view>
+    <!-- 测试VUE_VLI编译的组件 -->
+    <chart-preview style="width:100%;height:250px;display:flex;margin:5px"></chart-preview>
+    <chart-preview style="width:100%;height:250px;display:flex;margin:5px"></chart-preview>
+    <chart-preview style="width:100%;height:250px;display:flex;margin:5px"></chart-preview>
+</body>
+</html>
